@@ -1,16 +1,34 @@
-import * as React from "react";
-import { AppBar, Toolbar } from "@material-ui/core";
-import Button from "@material-ui/core/Button";
-import { List, ListItem, ListItemText } from "@material-ui/core";
+import React from "react";
+import { AppBar, Typography, Toolbar, Button } from "@material-ui/core";
+import { Link } from "react-router-dom";
+import {
+  List,
+  ListItem,
+  ListItemText,
+  MenuItem,
+  MenuList,
+} from "@material-ui/core";
+import MenuIcon from "@material-ui/icons/Menu";
+import { makeStyles } from "@material-ui/core/styles";
 
-const NaveBar = () => {
+const NavBar = () => {
   return (
     <AppBar position="static">
       <Toolbar>
-        <Button>Home</Button>
-        <Button>About</Button>
+        <MenuIcon />
+
+        <Button component={Link} to="/home">
+          Home
+        </Button>
+
+        <Button component={Link} to="/about">
+          About
+        </Button>
+        <Button component={Link} to="/portfolio">
+          Portfolio
+        </Button>
       </Toolbar>
     </AppBar>
   );
 };
-export default NaveBar;
+export default NavBar;
