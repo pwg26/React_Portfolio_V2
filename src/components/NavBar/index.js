@@ -11,24 +11,32 @@ import {
 import MenuIcon from "@material-ui/icons/Menu";
 import { makeStyles } from "@material-ui/core/styles";
 
+const outerTheme = createMuiTheme({
+  palette: {
+    primary: {
+      main: "#7b1fa2",
+    },
+  },
+});
+
 const NavBar = () => {
   return (
-    <AppBar position="static">
-      <Toolbar>
-        <MenuIcon />
+    <ThemeProvider theme={outerTheme}>
+      <AppBar position="static">
+        <Toolbar>
+          <Button bgcolor="primary" component={Link} to="/home">
+            Home
+          </Button>
 
-        <Button component={Link} to="/home">
-          Home
-        </Button>
-
-        <Button component={Link} to="/about">
-          About
-        </Button>
-        <Button component={Link} to="/portfolio">
-          Portfolio
-        </Button>
-      </Toolbar>
-    </AppBar>
+          <Button component={Link} to="/about">
+            About
+          </Button>
+          <Button component={Link} to="/portfolio">
+            Portfolio
+          </Button>
+        </Toolbar>
+      </AppBar>
+    </ThemeProvider>
   );
 };
 export default NavBar;
