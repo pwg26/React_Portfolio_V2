@@ -83,7 +83,7 @@ function About() {
                 variant="contained"
                 color="primary"
                 component={Link}
-                to="/home"
+                to="/travelhome"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
