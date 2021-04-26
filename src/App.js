@@ -7,11 +7,18 @@ import portfolio from "./pages/Portfolio";
 import travelhome from "./pages/TravelHome";
 import sayulita from "./pages/Sayulita";
 import munich from "./pages/Munich";
+// import background from "../public/images/me.jpg";
 
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div
+        style={{
+          backgroundImage: `url(${
+            process.env.PUBLIC_URL + "/images/triangle.png"
+          })`,
+        }}
+      >
         <Navbar />
 
         <Route exact path="/" component={home} />
@@ -21,9 +28,9 @@ function App() {
         <Route exact path="/travelhome" component={travelhome} />
         <Route exact path="/sayulita" component={sayulita} />
         <Route exact path="/munich" component={munich} />
-
-        {/* <Footer /> */}
       </div>
+
+      {/* <Footer /> */}
     </Router>
   );
 }

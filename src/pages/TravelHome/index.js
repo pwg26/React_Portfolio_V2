@@ -38,7 +38,7 @@ function TravelHome() {
   return (
     <Container className={classes.line} maxWidth="md">
       <h1>Travel</h1>
-      <Card className={classes.root}>
+      <Card xxc>
         <Grid container spacing={1}>
           <Grid item xs={6} align="center">
             <img

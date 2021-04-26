@@ -1,27 +1,63 @@
 import React from "react";
 import ProjectCard from "../../components/ProjectCard";
-import faggots from "../../projects.json";
+import datas from "../../projects.json";
+import Grid from "@material-ui/core/Grid";
 import ProjectContext from "../../utils/context";
+import Container from "@material-ui/core/Container";
+import { makeStyles } from "@material-ui/core/styles";
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1,
+    "& > *": {
+      margin: theme.spacing(1),
+    },
+  },
+  but: {
+    textAlign: "center",
+  },
+  line: {
+    lineHeight: "1.6",
+  },
+
+  content: {
+    flex: "1 0 auto",
+  },
+}));
 
 function Portfolio() {
+  const classes = useStyles();
   return (
-    <div>
-      {faggots.map((faggot) => {
+    <Grid
+      alignItems="center"
+      justify="center"
+      alignContent="center"
+      container
+      spacing={0}
+      direction="row"
+    >
+      <Grid item xs={12}>
+        <h1>Portfolio</h1>
+      </Grid>
+
+      {datas.map((data) => {
         return (
-          <ProjectContext.Provider
-            value={{
-              image: faggot.image,
-              title: faggot.title,
-              description: faggot.description,
-              giturl: faggot.giturl,
-              appurl: faggot.appurl,
-            }}
-          >
-            <ProjectCard />
-          </ProjectContext.Provider>
+          <Grid item xs={4}>
+            <ProjectContext.Provider
+              value={{
+                image: data.image,
+                title: data.title,
+                description: data.description,
+                giturl: data.giturl,
+                appurl: data.appurl,
+              }}
+            >
+              <ProjectCard />
+            </ProjectContext.Provider>
+          </Grid>
         );
       })}
-    </div>
+    </Grid>
   );
 }
 

@@ -3,16 +3,16 @@
     {
             "image": "/images/me.jpg",
             "title": "Hospitality Herald",
-            "description": "A hospistality management system",
+            "description": "A hospistality management system wit store, rooms, and reservations.",
             "giturl": "https://github.com/pwg26/hostel_hedonism",
             "appurl": "https://hostelhedonism.herokuapp.com/"
 
     },
     {
-        "image": "/images/urban.jpg",
+        "image": "/images/urban.png",
         "title": "Urban El Dorado",
         "description":
-          "An application that tracks the social standing of an area",
+          "An application that tracks the living suitability of an area.",
         "giturl": "https://github.com/pwg26/RepositoryForAwesomeProject",
         "appurl": "https://pwg26.github.io/RepositoryForAwesomeProject/"
     },
@@ -27,21 +27,21 @@
     {
         "image": "/images/finance.png",
         "title": "Straight Finance",
-        "description": "A budget tacker",
+        "description": "A budget tacker for expenses",
         "giturl": "https://github.com/pwg26/Straight_Finance",
         "appurl": "https://pwg26.github.io/RepositoryForAwesomeProject/"
       },
       {
         "image": "/images/weather.png",
         "title": "Weather Boy",
-        "description": "A weather tracking app for a 5 day forecast",
+        "description": "A weather tracking app for a 5 day forecast.",
         "giturl": "https://github.com/pwg26/GetToKnowTheWeather",
         "appurl": "https://pwg26.github.io/GetToKnowTheWeather/"
       },
       {
         "image": "/images/password.jpg",
         "title": "Random Password Generator",
-        "description": "A customizable password generator",
+        "description": "A customizable password generator.",
         "giturl": "https://github.com/pwg26/SuperCoolPasswordPicker",
         "appurl": "https://pwg26.github.io/SuperCoolPasswordPicker/"
       }
