@@ -39,7 +39,7 @@ function TravelHome() {
     <Container className={classes.line} maxWidth="md">
       <h1>Travel</h1>
       <Card xxc>
-        <Grid container spacing={1}>
+        <Grid container>
           <Grid item xs={6} align="center">
             <img
               src={process.env.PUBLIC_URL + "/images/lake.jpg"}

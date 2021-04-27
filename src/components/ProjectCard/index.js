@@ -27,7 +27,7 @@ export default function ImgMediaCard() {
   return (
     <ProjectContext.Consumer>
       {({ image, title, description, giturl, appurl }) => (
-        <Box m={1}>
+        <Box m={1} alignItems="center" justifyContent="center">
           <Card className={classes.root} style={{ display: "inline-block" }}>
             <CardActionArea>
               <CardMedia
@@ -46,7 +46,7 @@ export default function ImgMediaCard() {
                 </Typography>
               </CardContent>
             </CardActionArea>
-            <CardActions>
+            <CardActions style={{ textAlign: "center" }}>
               <Button size="small" color="primary" href={giturl}>
                 GitHub Repo
               </Button>
